@@ -1,0 +1,299 @@
+@media (max-width: 1000px) {
+
+    /* Header */
+    header h1 {
+        font-size: 4.3rem;
+        margin-top: 10%;
+    }
+
+    /* Gallery */
+    .gallery h2 {
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    /* Articles */
+    .articles article {
+        padding: 50px 2% 50px 4%;
+    }
+
+    .articles h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 0;
+    }
+    footer ul {
+        margin-bottom: 40px;
+        width: 80%;
+        margin: 0 10% 40px 10%;
+    }
+
+    footer li {
+        float: left;
+        width: 21%;
+        font-size: 0.9rem;
+        margin: 0 2%;
+        text-align: center;
+    }
+
+    footer form {
+        width: 70%;
+        text-align: left;
+    }
+
+    footer .textBox {
+        width: 30%;
+    }
+
+    footer form p {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    
+    footer .textBox p {
+        font-size: 0.7rem;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+    .buttonLink {
+        margin-top: 50px;
+    }
+
+    /* Header */
+    header {
+        height: 100vh;
+        max-height: 700px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav li {
+        width: 25%;
+        padding: 0;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    /* Story */
+    .story .imageHolder {
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .story .imageHolder img {
+        vertical-align: middle;
+    }
+
+    .story h2 {
+        font-size: 1.9rem;
+        margin: 50px auto 20px auto;
+    }
+
+    .story .textBox {
+        padding: 0;
+    }
+
+    .story p {
+        font-size: 0.9rem;
+        line-height: 160%;
+    }
+
+    .story .textBox {
+        width: 100%;
+    }
+
+    .story .buttonLink {
+        margin: 0 auto;
+    }
+
+    /* Gallery */
+    .gallery h2 {
+        font-size: 1.9rem;
+    }
+
+    .gallery img {
+        width: calc(50% - 2%);
+        margin: 0 1%;
+    }
+
+    .gallery .wrapper {
+        width: 90%;
+    }
+
+    .gallery img:nth-last-child(1){
+        border: 2px tomato solid;
+        display: none;
+    }
+
+    /* Links */
+    .links .icon h2 {
+        font-size: 1.35rem;
+    }
+
+    /* Articles */
+    .articles article {
+        padding: 60px 10% 80px 10%;
+    }
+    .articles .textBox {
+        float: right;
+    }
+    .articles article, .articles .imageHolder {
+        width: 100%;
+        text-align: center;
+    }
+
+    .articles h2 {
+        max-width: 80%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .imageCollapse {
+        display: block;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 0;
+    }
+    footer .wrapper {
+        width: 80%;
+        text-align: center;
+    }
+
+    footer form, footer .textBox {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer li {
+        display: inline-block;
+        font-size: 0.9rem;
+        margin: 0 2%;
+        text-align: center;
+    }
+
+    footer p, footer h2 {
+        text-align: center;
+    }
+
+    footer form input:nth-of-type(1) {
+        margin-bottom: 10px;
+    }
+
+    footer .textBox {
+        padding: 40px 0;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    p { 
+        font-size: 0.9rem;
+    }
+
+    /* Header css */
+    nav.mobile {
+        width: auto;
+        display: block;
+        font-size: 2rem;
+        float: right;
+        min-width: auto;
+        padding-top: 2.5%;
+    }
+
+    header .wrapper {
+        width: 88.5%;
+    }
+    header {
+        height: 100vh;
+        max-height: 600px;
+    }
+
+    header .social {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header h1 {
+        float: left;
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 1.5rem;
+        text-align: left;
+        margin-top: 2.5%;
+        width: 50%;
+    }
+
+    /* Main css */
+    main .wrapper {
+        padding: 50px 0;
+    }
+
+    /* Story css */
+    .story .wrapper {
+        width: 90%;
+    }
+
+    .story .imageHolder {
+        max-height: 300px;
+    }
+
+    /* Links */
+    .links .icon {
+        width: 100%;
+    }
+
+    .links .icon {
+        margin-top: 50px;
+    }
+
+    .links .icon:nth-of-type(1) {
+        margin-top: 0;
+    }
+
+    /* articles */
+    .articles article {
+        padding: 40px 5% 50px 5%;
+    }
+    
+    .articles p {
+        font-size: 0.9rem;
+    }
+
+    /* footer */
+
+    footer .wrapper {
+        width: 90%;
+    }
+
+    footer input, form .buttonForm {
+        width: 100%;
+        text-align: center;
+    }
+
+}
