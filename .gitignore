@@ -1,0 +1,4 @@
+# add list of files we don't want to push to master
+# make sure to include file path
+*.psd
+.DS_Store
