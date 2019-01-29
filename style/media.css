@@ -1,43 +1,19 @@
 @media (max-width: 1250px) {
-    .articles .rightImage {
-        /* background-size: 100%;
-        background-position: center center;
-        position: absolute;
-        left: 50%;
-        width: 50%;
-        bottom: 0;
-        top: 0; */
-    }
-    
-    .articles .leftImage {
-        /* background: url("../images/HumansAnimals.jpg");
-        background-size: 100% auto;
-        background-position: center center;
-        position: absolute;
-        right: 50%;
-        width: 50%;
-        bottom: 0;
-        top: 0; */
-    }
 
+    /* story styles */
     .story .imageHolder {
-        /* width: 25%; */
         width: 100%;
-        max-width: 800px;
         height: 320px;
         margin: 0 auto;
         float: none;
-        /* overflow: hidden; */
-        /* min-width: 315px; */
-        /* position: relative; */
     }
 
     .story .imageHolder img {
         position: relative;
-        bottom: 120px;
+        top: -75%;
     }
+
     .story h2 {
-        /* font-size: 1.9rem; */
         margin: 50px auto 20px auto;
         float: none;
         text-align: center;
@@ -51,6 +27,38 @@
         width: 100%;
         padding-left: 0;
     }
+
+    /* footer styles */
+    footer ul {
+        margin-bottom: 40px;
+        width: 80%;
+        margin: 0 10% 40px 10%;
+    }
+
+    footer li {
+        float: left;
+        width: 21%;
+        /* font-size: 0.9rem; */
+        margin: 0 2%;
+        text-align: center;
+    }
+
+    footer form {
+        width: 70%;
+        text-align: left;
+    }
+
+    footer .textBox {
+        width: 30%;
+    }
+
+    footer form p {
+        margin-bottom: 20px;
+    }
+    
+    footer .textBox p {
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -66,6 +74,11 @@
         font-size: 2rem;
         width: 100%;
         margin-bottom: 40px;
+    }
+
+    .story .imageHolder img {
+        position: relative;
+        top: -30%;
     }
 
     /* Articles */
@@ -113,14 +126,12 @@
 
 
 @media (max-width: 850px) {
-    .buttonLink {
-        margin-top: 50px;
-    }
-
-    /* Header */
+    
+    /* header css */
     header {
         height: 100vh;
         max-height: 700px;
+        background-position: 40% 0; 
     }
 
     nav {
@@ -138,19 +149,14 @@
         font-size: 3.5rem;
     }
 
-    /* Story */
+    /* story css */
     .story .imageHolder {
         width: 100%;
         max-height: 400px;
     }
 
-    /* .story .imageHolder img {
-        vertical-align: middle;
-    } */
-
     .story h2 {
         font-size: 1.9rem;
-        /* margin: 50px auto 20px auto; */
     }
 
     .story .textBox {
@@ -166,11 +172,11 @@
         width: 100%;
     }
 
-    /* .story .buttonLink {
-        margin: 0 auto;
-    } */
+    .buttonLink {
+        margin-top: 50px;
+    }
 
-    /* Gallery */
+    /* gallery css */
     .gallery h2 {
         font-size: 1.9rem;
     }
@@ -189,12 +195,12 @@
         display: none;
     }
 
-    /* Links */
+    /* links css */
     .links .icon h2 {
         font-size: 1.35rem;
     }
 
-    /* Articles */
+    /* articles css */
     .articles article {
         padding: 60px 10% 80px 10%;
     }
@@ -218,10 +224,11 @@
         font-size: 1.1rem;
     }
 
-    /* Footer */
+    /* footer css */
     footer {
         padding: 40px 0;
     }
+
     footer .wrapper {
         width: 80%;
         text-align: center;
@@ -259,6 +266,7 @@
 
 @media (max-width: 600px) {
 
+    /* global stlyes */
     a {
         font-size: 0.9rem;
     }
@@ -267,8 +275,8 @@
         font-size: 0.9rem;
     }
 
-    /* Header css */
-    nav.mobile {
+    /* header css */
+    nav .mobile {
         width: auto;
         display: block;
         font-size: 2rem;
@@ -283,13 +291,14 @@
     header {
         height: 100vh;
         max-height: 600px;
+        background-position: 30% 0; 
     }
 
     header .social {
         display: none;
     }
 
-    nav {
+    nav ul {
         display: none;
     }
 
@@ -298,16 +307,16 @@
         font-family: 'Fredericka the Great', cursive;
         font-size: 1.5rem;
         text-align: left;
-        margin-top: 2.5%;
+        margin-top: 0;
         width: 50%;
     }
 
-    /* Main css */
+    /* main css */
     main .wrapper {
         padding: 50px 0;
     }
 
-    /* Story css */
+    /* story css */
     .story .wrapper {
         width: 90%;
     }
@@ -316,7 +325,12 @@
         max-height: 300px;
     }
 
-    /* Links */
+    .story .imageHolder img {
+        position: relative;
+        top: -10%;
+    }
+
+    /* links styles */
     .links .icon {
         width: 100%;
     }
@@ -329,7 +343,7 @@
         margin-top: 0;
     }
 
-    /* articles */
+    /* articles styles */
     .articles article {
         padding: 40px 5% 50px 5%;
     }
@@ -338,8 +352,7 @@
         font-size: 0.9rem;
     }
 
-    /* footer */
-
+    /* footer styles */
     footer .wrapper {
         width: 90%;
     }

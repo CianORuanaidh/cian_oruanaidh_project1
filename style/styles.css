@@ -5,15 +5,32 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* Global styles */
+/* global styles */
 html {
     font-size: 125%
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+  
+.skip-link:focus {
+    left: 0;
 }
 
 a {
     color: white;
     text-decoration: none;
     padding: 10px;
+}
+
+.articles a:focus {
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.75);
 }
 
 ul {
@@ -26,7 +43,6 @@ p {
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: 'Roboto', sans-serif;
-    /* margin-bottom: 5%; */
 }
 
 .buttonLink {
@@ -39,7 +55,11 @@ p {
     padding: 16px;
     margin-top: 5%;
     text-align: center;
+}
 
+.story .buttonLink:hover {
+    background: rgba(255,255,255,0.3);
+    color: white;
 }
 
 img {
@@ -47,14 +67,12 @@ img {
     display: block;
 }
 
-/* Header css */
-
+/* header styles */
 header {
     color: white;
-    background: url(../images/tigerImage.jpg);
+    background: url(../images/tigerImage2x.jpg);
     background-size: cover;
     background-position: center center;
-    /* height: 100vh; */
     height: 800px;
     max-height: 100vh;  
     position: relative;
@@ -71,11 +89,10 @@ nav {
     text-transform: uppercase;
     padding-top: 24px;
     float: left;
-    /* min-width: 650px; */
     width: 100%;
 }
 
-nav.mobile {
+nav .mobile {
     display: none;
     width: 0;
     height: 0;
@@ -94,7 +111,7 @@ header h1 {
     text-transform: uppercase;
     width: 70%;
     text-align: right;
-    margin-top: calc(15% - 50px);
+    margin-top: calc(10% - 50px);
     line-height: 0.98;
 }
 
@@ -110,11 +127,25 @@ header .social {
 }
 
 .social li {
-    margin-top: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    line-height: 1.5rem;
 }
 
+nav a:hover, footer a:hover {
+    color: khaki;
+    text-decoration: underline;
+}
 
-/* Main css */
+.social a:hover {
+    color: black;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    line-height: 1.5rem;
+}
+
+/* main styles */
 main h2 { 
     font-family: 'Fredericka the Great', cursive;
     font-size: 2.55rem;
@@ -128,7 +159,7 @@ main .wrapper {
     padding: 110px 0;
 }
 
- /* Story */
+ /* story styles */
 .story, .links {
     background: #152d20;
     color: white;
@@ -139,10 +170,8 @@ main .wrapper {
 }
 
 .story .imageHolder {
-    /* width: 25%; */
     width: 350px;
     overflow: hidden;
-    /* min-width: 315px; */
 }
 
 .story .textBox {
@@ -162,7 +191,7 @@ section.gallery {
     background: #c3d3cb;
 }
 
-/* Gallery */
+/* gallery styles*/
 .gallery img {
     margin: 0 1.25%;
     width: calc(33% - 2.5%);
@@ -171,17 +200,21 @@ section.gallery {
 
 .gallery h2 {
     text-align: center;
-    /* margin-bottom: 90px; */
     width: 33%;
     margin:  0 auto 90px auto;
 }
 
-/* Links */
+/* links styles */
 .links .icon {
     width: calc(85% / 3);
     margin: 0 2.5%;
     float: left;
     text-align: center;
+}
+
+.icon a:hover {
+    color: khaki;
+    text-decoration: underline;
 }
 
 .links i {
@@ -198,7 +231,7 @@ section.gallery {
     line-height: 200%;
 }
 
-/* Articles */
+/* articles */
 .articles {
     color: #152d20;
 }
@@ -231,7 +264,7 @@ section.gallery {
 }
 
 .articles .rightImage {
-    background: url("../images/zebras.jpg");
+    background: url("../images/zebras@2x.jpg");
     background-size: auto 100%;
     background-position: center center;
     position: absolute;
@@ -243,7 +276,7 @@ section.gallery {
 
 .articles .leftImage {
     background: lightblue;
-    background: url("../images/HumansAnimals.jpg");
+    background: url("../images/HumansAnimals@2x.jpg");
     background-size: auto 100%;
     background-position: center center;
     position: absolute;
@@ -270,7 +303,12 @@ section.gallery {
     margin: 10% auto 0 auto;
 }
 
-/* Footer */
+.buttonLink:hover {
+    background: rgba(0,0,0,0.3);
+    color: black;
+}
+
+/* footer styles*/
 footer {
     clear: both;
     padding: 100px 0 100px 0;
@@ -284,12 +322,15 @@ footer .wrapper {
     margin: 0 auto;
 }
 
- /* Footer */
+ /* footer styles*/
 footer ul, footer .textBox {
     float: left;
     width: 25%;
 }
 
+footer ul a {
+    padding: 0;
+}
 
 footer form {
     float: left;
@@ -308,10 +349,6 @@ footer ul {
 footer h2 {
     font-size: 1.25rem;
     margin-top: 0;
-}
-
-footer p {
-    /* margin: 10px 0 0 0; */
 }
 
 footer .textBox {
@@ -342,6 +379,14 @@ form .buttonForm {
     display: inline-block;
     width: 160px;
     padding: 0;
+}
+
+form .buttonForm:hover {
+    box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.75);
+}
+
+form .buttonForm:active {
+    box-shadow: 0px 0px 2px 5px rgba(255,255,255,0.75);
 }
 
 .copyright {
