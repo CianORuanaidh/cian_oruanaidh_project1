@@ -438,7 +438,6 @@ form .buttonForm:active {
     footer li {
         float: left;
         width: 21%;
-        /* font-size: 0.9rem; */
         margin: 0 2%;
         text-align: center;
     }
@@ -463,13 +462,13 @@ form .buttonForm:active {
 
 @media (max-width: 1000px) {
 
-    /* Header */
+    /* header styles */
     header h1 {
         font-size: 4.3rem;
         margin-top: 10%;
     }
 
-    /* Gallery */
+    /* gallery styles */
     .gallery h2 {
         font-size: 2rem;
         width: 100%;
@@ -481,12 +480,12 @@ form .buttonForm:active {
         top: -30%;
     }
 
-    /* Articles */
+    /* articles styles */
     .articles h2 {
         font-size: 1.5rem;
     } 
 
-    /* Footer */
+    /* footer styles */
     footer {
         padding: 50px 0;
     }
@@ -527,7 +526,7 @@ form .buttonForm:active {
 /* media queries */
 @media (max-width: 850px) {
     
-    /* header css */
+    /* header styles */
     header {
         height: 100vh;
         max-height: 700px;
@@ -549,7 +548,7 @@ form .buttonForm:active {
         font-size: 3.5rem;
     }
 
-    /* story css */
+    /* story styles */
     .story .imageHolder {
         width: 100%;
         max-height: 400px;
@@ -576,7 +575,7 @@ form .buttonForm:active {
         margin-top: 50px;
     }
 
-    /* gallery css */
+    /* gallery styles */
     .gallery h2 {
         font-size: 1.9rem;
     }
@@ -595,12 +594,12 @@ form .buttonForm:active {
         display: none;
     }
 
-    /* links css */
+    /* links styles */
     .links .icon h2 {
         font-size: 1.35rem;
     }
 
-    /* articles css */
+    /* articles styles */
     .articles article {
         padding: 60px 10% 80px 10%;
     }
@@ -624,7 +623,7 @@ form .buttonForm:active {
         font-size: 1.1rem;
     }
 
-    /* footer css */
+    /* footer styles */
     footer {
         padding: 40px 0;
     }
@@ -665,7 +664,6 @@ form .buttonForm:active {
 }
 
 @media (max-width: 600px) {
-
     /* global stlyes */
     a {
         font-size: 0.9rem;
@@ -675,7 +673,7 @@ form .buttonForm:active {
         font-size: 0.9rem;
     }
 
-    /* header css */
+    /* header styles */
     nav .mobile {
         width: auto;
         display: block;
@@ -711,12 +709,12 @@ form .buttonForm:active {
         width: 50%;
     }
 
-    /* main css */
+    /* main styles */
     main .wrapper {
         padding: 50px 0;
     }
 
-    /* story css */
+    /* story styles */
     .story .wrapper {
         width: 90%;
     }
@@ -736,11 +734,15 @@ form .buttonForm:active {
     }
 
     .links .icon {
-        margin-top: 50px;
+        margin: 50px 0 0 0;
     }
 
     .links .icon:nth-of-type(1) {
         margin-top: 0;
+    }
+
+    .icon a {
+        padding: 0;
     }
 
     /* articles styles */
